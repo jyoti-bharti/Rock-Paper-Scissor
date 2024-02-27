@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+h1{
+    background-color:rgb(26, 10, 81);
+    color:white;
+    height:5rem;
+    line-height:5rem; /*it is ued to align the text vertically.
+    To place it in center we should  keep this value same as height.*/
+}
+
+.choice{
+    height: 170px;
+    width:170px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.choice:hover{
+  /*  opacity:50%;  */
+    cursor:pointer;
+    background-color: black;
+}
+
+img{
+    height:150px;
+    width:150px;
+    object-fit:cover;
+   /* border:3px solid red; */
+    border-radius:50%;
+}
+
+.choices{
+    display:flex; /*makes the elments to align in same line*/
+    justify-content: center; /*makes the elements to move to center */
+    align-items:center; /*makes each element to align in center */
+    gap:3rem;
+    margin-top:5rem;
+}
+
+.score-board{
+    display:flex;
+    justify-content:center;
+    align-items:center; /*we can also use this to vertically align items */
+    font-size:2rem;
+    gap:8rem;
+}
+
+#user-score, #comp-score{
+    font-size:4rem;
+}
+
+#userChoice, #compChoice{
+    color:red;
+}
+
+.msg-container{
+    margin:4rem;
+}
+
+#msg{
+    background-color: rgb(26, 10, 81);
+    color:white;
+    font-size:2rem;
+    display:inline; /* it covers only that part where the text is written */
+    padding:1rem;
+    border-radius:1rem;
+}
+
